@@ -1,39 +1,32 @@
----
-title: "test markdown"
-author: "luke durell"
-date: "10/1/2020"
-output: 
-  html_document: 
-    keep_md: yes
----
+test markdown
+================
+luke durell
+10/1/2020
 
+Hello this is from Rmarkdown.
 
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-
-```r
-summary(cars)
+``` r
+#- here's some code that does something
+r <- 5
+r + 5
 ```
 
-```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
+    ## [1] 10
+
+``` r
+for (i in 4:(r+4)) {
+  message(paste0("This is the ", i+4, "th iteration!"))
+}
 ```
 
-## Including Plots
+    ## This is the 8th iteration!
 
-You can also embed plots, for example:
+    ## This is the 9th iteration!
 
-![](test_mkdwn_files/figure-html/pressure-1.png)<!-- -->
+    ## This is the 10th iteration!
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+    ## This is the 11th iteration!
+
+    ## This is the 12th iteration!
+
+    ## This is the 13th iteration!
