@@ -3,10 +3,9 @@ test markdown
 luke durell
 10/1/2020
 
-Hello this is from Rmarkdown.
+Hello this is from Rmarkdown. r - here’s some code that does something
 
 ``` r
-#- here's some code that does something
 r <- 5
 r + 5
 ```
